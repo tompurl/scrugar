@@ -2,6 +2,9 @@
 README
 ======
 
+Catchy Slogan
+=============
+
 GNU Screen + a little sugar =  Scrugar
 
 Overview
@@ -9,10 +12,10 @@ Overview
 
 This project consists of the following:
 
-* Functions and aliases that make it easier to manage screen sessions
+* Functions and aliases that make it easier to manage Screen sessions
 * A set of Screen "profile" files
 
-99% of the screen users that I know have one file for setting Screen
+99% of the Screen users that I know have one file for setting Screen
 preferences, ``~/.screenrc``. For me though, this didn't work because I like
 to have different terminal sessions available for different types of tasks. 
 
@@ -31,15 +34,19 @@ Setup
 
 :: 
 
-    # Install GNU Screen
+    # Install GNU Screen using apt-get or whatever.
     $ cd $HOME
     $ git clone http://github.com/tompurl/scrugar.git
     $ echo "source $HOME/scrugar/aliases >> .bashrc
     $ echo "source $HOME/scrugar/functions >> .bashrc
     $ source .bashrc # <= First time only
 
-Example
-=======
+Examples
+========
+
+---------------------------
+Attachiing To A New Session
+---------------------------
 
 Let's say that you just started your computer and opened a terminal, and you 
 would like to start working on a Ruby script. Let's also assume that you 
@@ -57,6 +64,10 @@ You should now be in your Screen session that is specified in your **rails-foo**
 project. You can navigate between windows by pressing ``Ctrl-A "`` and then using
 the ``j`` and ``k`` buttons to move up and down. You can leave the Screen session by
 pressing ``Ctrl-A d``. These are both standard Screen keyboard commands.
+
+-----------------------------------
+Re-Attaching To An Existing Session
+-----------------------------------
 
 Now let's say that you want to check your system mail using ``mutt``. You know
 that you have a Screen profile called **localhost** that has a ``mutt`` window,
@@ -87,3 +98,25 @@ reattach to that::
     $ sr localhost
 
 Ta-da! I'm now back in my old **locahost** Screen session. 
+
+-----------------
+Closing A Session
+-----------------
+
+Now let's say that you would like to close your **rails-foo** session. Maybe
+you're done with it for now. Maybe your wrecked it and would like to start
+over.  Either way, you basically have two choices:
+
+#. Go into each terminal window in your Screen session and ``exit`` it manually.
+#. Leave your Screen session and then type ``sk rails-foo``.
+
+Please note that option 2 executes a ``kill -9`` on the Screen process that is
+the parent of the terminal windows in your session. The ``-9`` switch does
+**not** shut processes down gracefully, so you should only use the ``sk`` alias
+if you closed all of the files and shut down all of the processes in the child
+terminal windows.
+
+Commands
+========
+
+TODO
