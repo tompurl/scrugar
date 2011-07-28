@@ -26,6 +26,18 @@ it easier for me to focus on my tasks.
 Screen supports this type of usage, but you just need a few little functions
 to make things easy to manage. And that's what this is.
 
+Setup
+=====
+
+:: 
+
+    # Install GNU Screen
+    $ cd $HOME
+    $ git clone http://github.com/tompurl/scrugar.git
+    $ echo "source $HOME/scrugar/aliases >> .bashrc
+    $ echo "source $HOME/scrugar/functions >> .bashrc
+    $ source .bashrc # <= First time only
+
 Example
 =======
 
