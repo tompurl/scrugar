@@ -1,0 +1,11 @@
+caption always "%?%F%{-b bc}%:%{-b bb}%?%C|%D|%M %d|%H%?%F%{+u wb}%? %L=%-Lw%45>%{+b by}%n%f* %t%{-}%+Lw%-0<"
+shell -$SHELL
+defscrollback 1024
+
+chdir /home/tom/Dev/jruby
+screen -t editor 0 
+screen -t console 1
+screen -t irb 2 
+screen -t scratch 9
+
+select 1

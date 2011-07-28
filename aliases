@@ -1,0 +1,8 @@
+alias sls='screen -ls'
+alias sr='screen -r'
+alias sd='screen -D'
+alias sw='screen -wipe'
+alias sa='screenadd'
+alias sk='killscreen'
+alias sn='screennuke'
+alias si='screenids'

@@ -1,0 +1,10 @@
+caption always "%?%F%{-b bc}%:%{-b bb}%?%C|%D|%M %d|%H%?%F%{+u wb}%? %L=%-Lw%45>%{+b by}%n%f* %t%{-}%+Lw%-0<"
+shell -$SHELL
+defscrollback 1024
+
+screen -T xterm -t apt-get 0 
+screen -T xterm -t vim 1 
+screen -T xterm -t htop 8 htop
+screen -T xterm -t scratch 9
+
+select 0

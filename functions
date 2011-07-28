@@ -1,0 +1,5 @@
+function getscreenpids() { ps auxww | grep screen | grep -v grep | awk '{print $2}'; }
+function screennuke() { for pid in $(getscreenpids); do kill -9 $pid; done; screen -wipe; }
+function killscreen() { screen -ls | grep $1 | awk '{print $1}' | cut -f1 -d. | xargs kill -9; screen -wipe; }
+function screenadd() { screen -S $1 -c ~/screenrc/profiles/${1}; }
+function screenids() { ls $HOME/screenrc | grep -v \~ | awk -F . '{print $2}'; }
