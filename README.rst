@@ -16,10 +16,11 @@ This project consists of the following:
 * A set of Screen "profile" files
 
 99% of the Screen users that I know have one file for setting Screen
-preferences, ``~/.screenrc``. For me though, this didn't work because I like
-to have different terminal sessions available for different types of tasks. 
+preferences, ``~/.screenrc``. For me though, this didn't work because I
+like to have different groups of terminal sessions available for different
+types of tasks. 
 
-For example, if I'm troublshooting a web server problem, I may want to have a
+For example, if I'm troubleshooting a web server problem, I may want to have a
 ``htop``, ``vim``, and ``mutt`` sessions available. If I'm working on a Rails
 application, then I would want to have ``vim``, ``irb``, ``mongrel``,
 ``logtail``, and ``git`` windows open. Being able to segregate these terminal
@@ -44,9 +45,9 @@ Setup
 Examples
 ========
 
----------------------------
-Attachiing To A New Session
----------------------------
+--------------------------
+Attaching To A New Session
+--------------------------
 
 Let's say that you just started your computer and opened a terminal, and you 
 would like to start working on a Ruby script. Let's also assume that you 
