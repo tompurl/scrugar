@@ -33,8 +33,8 @@ Setup
     # Install GNU Screen
     $ cd $HOME
     $ git clone http://github.com/tompurl/scrugar.git
-    $ echo "source $HOME/scrugar/aliases >> .bashrc
-    $ echo "source $HOME/scrugar/functions >> .bashrc
+    $ echo "source $HOME/scrugar/aliases" >> ~/.bashrc
+    $ echo "source $HOME/scrugar/functions" >> ~/.bashrc
     $ source .bashrc # <= First time only
 
 Example
