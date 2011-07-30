@@ -120,4 +120,26 @@ terminal windows.
 Commands
 ========
 
-TODO
+For more information, please see the ``functions`` and ``alises`` files.
+
+    sa session_name
+        Create a Screen session
+
+    sls
+        List all screen sessions
+
+    sr [session_name]
+        Reattach to an existing session
+
+    sk session_name
+        Kill a Screen session using the -9 switch and execute a "wipe"
+
+    si
+        List all of your available screen profile files
+
+    sd session_name
+        Detach a session that has been opened on a different system
+
+    sw
+        "Wipe" all screen sessions that have been closed "forcefully". This
+        command doesn't need to be executed very often.
