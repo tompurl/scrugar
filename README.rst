@@ -129,10 +129,12 @@ For more information, please see the ``functions`` and ``alises`` files.
         List all screen sessions
 
     sr [session_name]
-        Reattach to an existing session
+        Reattach to an existing session. If you don't provide a session name,
+        then you will attach to the first session listed using the ``sls``
+        command.
 
     sk session_name
-        Kill a Screen session using the -9 switch and execute a "wipe"
+        Kill a Screen session using the -9 switch and then execute a "wipe"
 
     si
         List all of your available screen profile files
