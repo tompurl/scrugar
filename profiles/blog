@@ -2,7 +2,7 @@ caption always "%?%F%{-b bc}%:%{-b bb}%?%C|%D|%M %d|%H%?%F%{+u wb}%? %L=%-Lw%45>
 shell -$SHELL
 defscrollback 1024
 
-chdir /home/tom/Documents/Blog/sphinx
+chdir /home/tom/Documents/Blog/jekyll-blog
 screen -t vim 0
 screen -t sphinx 1
 screen -t scratch 9
