@@ -4,7 +4,8 @@ defscrollback 1024
 
 screen -T xterm -t apt-get 0 
 screen -T xterm -t vim 1 
-screen -T xterm -t twitvim 1 
+screen -T xterm -t twitvim 2
+screen -h 0 -T xterm -t journal 3
 screen -T xterm -t mutt 7 
 screen -T xterm -t htop 8 htop
 screen -T xterm -t scratch 9
