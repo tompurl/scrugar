@@ -1,0 +1,12 @@
+caption always "%{+b rk}%H%{gk} |%c %{yk}%d.%m.%Y"
+hardstatus alwayslastline "%?%{yk}%-Lw%?%{wb}%n*%f %t%?(%u)%?%?%{yk}%+Lw%?"
+
+shell -$SHELL
+defscrollback 1024
+
+chdir /home/tom/Dropbox/Dev/CommonLisp
+screen -t vim 0 
+screen -t console 1
+screen -t scratch 9
+
+select 0

@@ -1,4 +1,7 @@
-caption always "%?%F%{-b bc}%:%{-b bb}%?%C|%D|%M %d|%H%?%F%{+u wb}%? %L=%-Lw%45>%{+b by}%n%f* %t%{-}%+Lw%-0<"
+backtick 1 10 10 /home/tom//gtd/todo/todo.actions.d/Punch.py what
+caption always "%{+b rk}%H%{gk} |%c %{yk}%d.%m.%Y | %1`"
+hardstatus alwayslastline "%?%{yk}%-Lw%?%{wb}%n*%f %t%?(%u)%?%?%{yk}%+Lw%?"
+
 shell -$SHELL
 defscrollback 1024
 
@@ -6,6 +9,7 @@ screen -T xterm -t apt-get 0
 screen -T xterm -t vim 1 
 screen -T xterm -t twitvim 2
 screen -h 0 -T xterm -t journal 3
+screen -T xterm -t todo.txt 4
 screen -T xterm -t mutt 7 
 screen -T xterm -t htop 8 htop
 screen -T xterm -t scratch 9
