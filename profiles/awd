@@ -2,11 +2,12 @@ caption always "%?%F%{-b bc}%:%{-b bb}%?%C|%D|%M %d|%H%?%F%{+u wb}%? %L=%-Lw%45>
 shell -$SHELL
 defscrollback 1024
 
-chdir '/home/tom/Dropbox/Dev/Vagrant/coffay'
+chdir /home/tom/Dev/ruby/agile_web_development
 screen -t editor 0 
-screen -t console 1
-screen -t vagrant_console 2
+screen -t unicorn_rails 1
+screen -t console 2
 screen -t git 3
+screen -t irb 4 
 screen -t scratch 9
 
 select 1
